@@ -1,5 +1,4 @@
 import MeetList from "../components/meets/MeetList"
-import Layout from "../components/layout/Layout"
 const DUMMY_MEETS = [
     {
     id: "m1",
