@@ -1,7 +1,7 @@
 import classes from './Navigation.module.css';
 import Link from "next/link";
 
-function MainNavigation() {
+function Navigation() {
 
   return (
     <header className={classes.header}>
@@ -20,4 +20,4 @@ function MainNavigation() {
   );
 }
 
-export default MainNavigation;
+export default Navigation;
