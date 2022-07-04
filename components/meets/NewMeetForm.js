@@ -6,6 +6,8 @@ import classes from './NewMeetForm.module.css';
 function NewMeetForm(props) {
   const titleInputRef = useRef();
   const imageInputRef = useRef();
+  const dayInputRef = useRef();
+  const timeInputRef = useRef();
   const addressInputRef = useRef();
   const descriptionInputRef = useRef();
 
@@ -14,14 +16,15 @@ function NewMeetForm(props) {
 
     const enteredTitle = titleInputRef.current.value;
     const enteredImage = imageInputRef.current.value;
+    const enteredDay = dayInputRef.current.value;
+    const enteredTime = timeInputRef.current.value;
     const enteredAddress = addressInputRef.current.value;
-    const enteredDay = descriptionInputRef.current.value;
-    const enteredtime = descriptionInputRef.current.value;
+    const enteredDescription = descriptionInputRef.current.value;
 
     const meetData = {
       title: enteredTitle,
       image: enteredImage,
-      time: enteredtime,
+      time: enteredTime,
       day: enteredDay,
       address: enteredAddress,
       description: enteredDescription,

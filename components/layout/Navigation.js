@@ -12,7 +12,7 @@ function Navigation() {
             <Link href='/'>All Meets</Link>
           </li>
           <li>
-            <Link href='/new-meetup'>Add Meet</Link>
+            <Link href='/new-meet'>Add Meet</Link>
           </li>
         </ul>
       </nav>
