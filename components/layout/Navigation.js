@@ -9,10 +9,10 @@ function Navigation() {
       <nav>
         <ul>
           <li>
-            <Link href='/'>All JAM Meets</Link>
+            <Link href='/'>All Meets</Link>
           </li>
           <li>
-            <Link href='/new-meetup'>Add New Meet</Link>
+            <Link href='/new-meetup'>Add Meet</Link>
           </li>
         </ul>
       </nav>
