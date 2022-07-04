@@ -5,7 +5,7 @@ function Navigation() {
 
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>JAM Meets</div>
+      <div className={classes.logo}>Local JAM Meets</div>
       <nav>
         <ul>
           <li>
