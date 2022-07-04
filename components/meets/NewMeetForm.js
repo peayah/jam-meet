@@ -15,11 +15,14 @@ function NewMeetForm(props) {
     const enteredTitle = titleInputRef.current.value;
     const enteredImage = imageInputRef.current.value;
     const enteredAddress = addressInputRef.current.value;
-    const enteredDescription = descriptionInputRef.current.value;
+    const enteredDay = descriptionInputRef.current.value;
+    const enteredtime = descriptionInputRef.current.value;
 
     const meetData = {
       title: enteredTitle,
       image: enteredImage,
+      time: enteredtime,
+      day: enteredDay,
       address: enteredAddress,
       description: enteredDescription,
     };
@@ -37,6 +40,14 @@ function NewMeetForm(props) {
         <div className={classes.control}>
           <label htmlFor='image'>Meet Image</label>
           <input type='url' required id='image' ref={imageInputRef} />
+        </div>
+        <div className={classes.control}>
+          <label htmlFor='day'>Day</label>
+          <input type='text' required id='day' ref={dayInputRef} />
+        </div>
+        <div className={classes.control}>
+          <label htmlFor='time'>Time</label>
+          <input type='text' required id='time' ref={timeInputRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor='address'>Address</label>

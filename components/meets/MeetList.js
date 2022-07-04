@@ -9,6 +9,8 @@ function MeetList(props) {
           key={meet.id}
           id={meet.id}
           image={meet.image}
+          time={meet.time}
+          day={meet.day}
           title={meet.title}
           address={meet.address}
         />
