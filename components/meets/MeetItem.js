@@ -17,8 +17,7 @@ function MeetItem(props) {
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
-          <p><b><time datetime="{props.day}">{props.day}s
-                </time> at <time datetime="{props.time}">{props.time}</time></b></p>
+          <p>{props.day}s at {props.time}</p>
           <address>{props.address}</address>
         </div>
         <div className={classes.actions}>

@@ -4,13 +4,13 @@ async function handler(req, res) {
     if(req.method === "POST") {
         const data = req.body;
 
-        const client = MongoClient.connect("mongodb+srv://venlig:taleromto382BWQ@cluster0.hq9gh.mongodb.net/?retryWrites=true&w=majority")
+        const client = await MongoClient.connect("mongodb+srv://venlig:taleromto382BWQ@cluster0.hq9gh.mongodb.net/?retryWrites=true&w=majority", { useUnifiedTopology: true })
     
         const db =  client.db();
 
-        const meetCollection = db.collection("meets");
+        const meetsCollection = db.collection("meets");
 
-        const result = await meetCollection.insertOne(data);
+        const result = await meetsCollection.insertOne(data);
     
         console.log(result)
 
