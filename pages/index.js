@@ -1,5 +1,5 @@
 import MeetList from "../components/meets/MeetList"
-
+import Layout from "../components/layout/Layout"
 const DUMMY_MEETS = [
     {
     id: "m1",
@@ -26,10 +26,14 @@ const DUMMY_MEETS = [
     address: "123 Main Street, CA 12345 Town",
     description: "This is a API meet"
 }
-]
+];
 
 function HomePage() {
-    return <MeetList meets={DUMMY_MEETS}/>
+    return (
+        <Layout>
+            <MeetList meets={DUMMY_MEETS}/>
+        </Layout>
+    );
 }
 
 export default HomePage;
