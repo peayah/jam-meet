@@ -28,11 +28,8 @@ const DUMMY_MEETS = [
 ];
 
 function HomePage() {
-    return (
-        <Layout>
-            <MeetList meets={DUMMY_MEETS}/>
-        </Layout>
-    );
+    
+    return <MeetList meets={DUMMY_MEETS}/>
 }
 
 export default HomePage;
